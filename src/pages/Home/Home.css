@@ -1,0 +1,147 @@
+.home {
+  padding-inline: 10vw;
+}
+.home h3 {
+  margin-bottom: 12px;
+}
+/* ! Random Styling */
+.random-meal {
+  background: url(../../../public/img/randomCard.png) no-repeat left;
+  width: 265px;
+  height: 175px;
+  margin-bottom: 20px;
+}
+
+.random-meal {
+  display: flex;
+  flex-direction: column;
+  padding-inline: 15px;
+  justify-content: end;
+  gap: 8px;
+}
+
+.random-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.random-meal h4 {
+  color: white;
+  width: 200px;
+}
+
+.random-info p {
+  color: white;
+}
+
+.random-info p:nth-of-type(1) {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.random-info p:nth-of-type(1)::before {
+  content: url(../../../public/img/circlecategory.svg);
+  margin-top: 5px;
+}
+
+/* !Area Styling */
+
+.select-options {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  overflow-x: scroll;
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+.select-options::-webkit-scrollbar {
+  overflow: hidden;
+}
+
+.select-options a {
+  background-color: #f1f5f5;
+  padding: 9px 24px;
+  border-radius: 40px;
+  color: black;
+}
+
+.select-options .active {
+  background-color: #70b9be;
+  color: white;
+}
+
+/* !Categories Styling */
+.categories-home {
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
+  overflow-x: scroll;
+}
+
+.categories-home::-webkit-scrollbar {
+  overflow: hidden;
+}
+
+.single-category {
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px;
+  padding-inline: 30px;
+  box-shadow: 0 2px 15px 0 #0633361a;
+  margin: 15px 10px;
+}
+
+.single-category a {
+  display: inline-block;
+  width: 200px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: black;
+  font-weight: 700;
+}
+.single-category a img {
+  height: 200px;
+  width: 200px;
+  object-fit: contain;
+}
+
+/* !Searchbar Styling */
+.suggestions {
+  height: 0px;
+  transition: 0s;
+  position: relative;
+  background-color: rgb(255, 255, 255);
+
+  overflow: hidden;
+}
+
+.show {
+  height: 200px;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  transition: 1s;
+  width: 70%;
+  box-shadow: 0 10px 20px 1px rgba(188, 188, 188, 0.325);
+}
+.suggestions a {
+  color: black;
+  display: block;
+}
+
+/* ! See all */
+.see {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.see-all {
+  color: #70b9be;
+  font-size: 14px;
+  font-weight: 700;
+  padding-right: 20px;
+}

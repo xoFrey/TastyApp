@@ -1,0 +1,24 @@
+.toggleklasse {
+  display: none;
+}
+.instructions {
+  margin: 1vw 3vw 5vw 3vw;
+  padding-inline: 4vw;
+  margin-top: -10px;
+  height: 150px;
+  margin-bottom: 47rem;
+}
+.instructions h3 {
+  margin-bottom: 5vw;
+}
+.instructions div {
+  box-shadow: 2px 2px 5px 5px black;
+  padding: 5vw;
+  border-radius: 10px;
+}
+.instructions p {
+  font-weight: 400;
+  margin-bottom: 5vw;
+  line-height: 140%;
+  white-space: pre-wrap;
+}

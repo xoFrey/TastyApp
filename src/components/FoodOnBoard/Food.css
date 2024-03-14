@@ -1,0 +1,57 @@
+.food {
+  background: url(../../../public/img/picturefoooood.png) no-repeat center;
+  background-size: contain;
+  margin: 0 4vw;
+  height: 65vh;
+  position: relative;
+}
+
+.food img {
+  position: absolute;
+  left: 25%;
+  bottom: 20%;
+  animation: wiggle 1.5s linear infinite;
+}
+
+.food img:nth-of-type(2) {
+  position: absolute;
+  left: 30%;
+  top: 25%;
+}
+.food img:nth-of-type(3) {
+  position: absolute;
+  left: 65%;
+  top: 27%;
+}
+.food img:nth-of-type(4) {
+  position: absolute;
+  left: 65%;
+  top: 38%;
+}
+.food img:nth-of-type(5) {
+  position: absolute;
+  left: 260px;
+  top: 370px;
+}
+.food img:nth-of-type(6) {
+  position: absolute;
+  left: 10px;
+  top: 240px;
+}
+
+@keyframes wiggle {
+  0%,
+  100% {
+    transform: rotateZ(0);
+  }
+  25% {
+    transform: rotateZ(10deg);
+  }
+  50% {
+    transform: rotateZ(20deg);
+  }
+
+  75% {
+    transform: rotateZ(10deg);
+  }
+}

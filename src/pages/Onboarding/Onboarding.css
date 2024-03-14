@@ -1,0 +1,43 @@
+.onboarding {
+  background: url("../../../public/img/Pattern.svg") no-repeat center;
+  background-size: contain;
+  background-color: #70b9be;
+  height: 100vh;
+  position: relative;
+}
+
+.onboarding article {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: start;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  height: 35vh;
+  border-radius: 16px 16px 0 0;
+  padding: 40px 40px;
+  width: 100%;
+}
+
+.onboarding article h2 {
+  margin-bottom: 15px;
+}
+
+.onboarding article p {
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  color: #97a2b0;
+  margin-inline: 6vw;
+  margin-bottom: 45px;
+}
+
+.started {
+  background-color: #042628;
+  color: white;
+  padding: 16px 120px;
+  border-radius: 16px;
+  font-size: 16px;
+  font-weight: 700;
+}

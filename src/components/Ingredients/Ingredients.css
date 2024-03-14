@@ -1,0 +1,35 @@
+/* .cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+.ingredients {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 2vw;
+  margin-bottom: 20vw;
+}
+/* .cont {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 2vw;
+} */
+
+.cont p {
+  box-shadow: 2px 2px 2px 2px black;
+  padding: 2vw 12vw;
+  border-radius: 10px;
+  margin-bottom: 1vw;
+}
+
+h3 {
+  text-align: left;
+  margin-bottom: 3vw;
+}
+
+.toggleklasse {
+  display: none;
+}

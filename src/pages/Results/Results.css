@@ -1,0 +1,56 @@
+.results {
+  padding: 0 10vw 0 10vw;
+}
+
+.results div {
+  box-shadow: 0 10px 20px 1px rgba(188, 188, 188, 0.325);
+  display: flex;
+  gap: 3vw;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.results div:first-of-type {
+  margin-top: 10vw;
+}
+
+.results a:last-of-type > div {
+  margin-bottom: 110px;
+}
+
+.results img:first-of-type {
+  width: 35%;
+}
+
+.results img:nth-of-type(2) {
+  width: 10%;
+  height: 10%;
+  margin-top: 15%;
+}
+
+.results h5 {
+  color: #0a2533;
+  font-size: 24px;
+  margin: 4vw 1vw 0 2vw;
+}
+
+.showNoMeal {
+  display: none;
+}
+
+.result-button {
+  width: 1000px;
+}
+
+/* see all button */
+
+.show {
+  margin-top: -10px;
+  margin-left: -10px;
+}
+
+.suggs {
+  margin-left: 80px;
+  margin-top: -10px;
+}

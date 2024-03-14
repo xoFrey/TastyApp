@@ -1,0 +1,102 @@
+.rotation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+.circle {
+  background: url(../../../public/img/particles.svg) no-repeat center;
+  background-size: contain;
+  background-color: hsla(0, 0%, 85%, 0.214);
+  border-radius: 50%;
+  height: 400px;
+  width: 400px;
+  position: relative;
+}
+.circle div {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -45px;
+}
+
+.circle div img {
+  display: block;
+  width: 100%;
+}
+.chicken {
+  transform: translate(150px);
+  animation: rotate-chicken 10s linear infinite;
+} /* 12em = half the width of the wrapper */
+.hotdog {
+  transform: rotate(60deg) translate(150px) rotate(-60deg);
+  animation: rotate-hotdog 10s linear infinite;
+}
+.raddish {
+  transform: rotate(120deg) translate(150px) rotate(-120deg);
+
+  animation: rotate-raddish 10s linear infinite;
+}
+.salad {
+  transform: rotate(180deg) translate(150px) rotate(-180deg);
+  animation: rotate-salad 10s linear infinite;
+}
+.onion {
+  transform: rotate(240deg) translate(150px) rotate(-240deg);
+  animation: rotate-onion 10s linear infinite;
+}
+.sushi {
+  transform: rotate(300deg) translate(150px) rotate(-300deg);
+  animation: rotate-sushi 10s linear infinite;
+}
+
+@keyframes rotate-sushi {
+  from {
+    transform: rotate(300deg) translate(150px) rotate(-300deg);
+  }
+  to {
+    transform: rotate(660deg) translate(150px) rotate(-660deg);
+  }
+}
+
+@keyframes rotate-onion {
+  from {
+    transform: rotate(240deg) translate(150px) rotate(-240deg);
+  }
+  to {
+    transform: rotate(600deg) translate(150px) rotate(-600deg);
+  }
+}
+@keyframes rotate-salad {
+  from {
+    transform: rotate(180deg) translate(150px) rotate(-180deg);
+  }
+  to {
+    transform: rotate(540deg) translate(150px) rotate(-540deg);
+  }
+}
+@keyframes rotate-raddish {
+  from {
+    transform: rotate(120deg) translate(150px) rotate(-120deg);
+  }
+  to {
+    transform: rotate(480deg) translate(150px) rotate(-480deg);
+  }
+}
+@keyframes rotate-hotdog {
+  from {
+    transform: rotate(60deg) translate(150px) rotate(-60deg);
+  }
+  to {
+    transform: rotate(420deg) translate(150px) rotate(-420deg);
+  }
+}
+@keyframes rotate-chicken {
+  from {
+    transform: rotate(0deg) translate(150px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translate(150px) rotate(-360deg);
+  }
+}

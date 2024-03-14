@@ -1,0 +1,36 @@
+.searchbarhome {
+  max-width: 428px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 60px;
+  margin-inline: auto;
+}
+
+.searchbarhome input {
+  width: 400px;
+  padding: 15px 52px;
+  border-radius: 16px;
+  border: 2px solid #e6ebf2;
+  margin-bottom: 18px;
+}
+
+.searchbarhome input::placeholder {
+  font-family: Montserrat;
+  font-size: 16px;
+  color: #97a2b0;
+}
+
+.searchbarhome label {
+  position: relative;
+}
+
+.searchbarhome label::before {
+  content: "";
+  position: absolute;
+  left: 16px;
+  top: 13px;
+  bottom: 0;
+  width: 20px;
+  background: url("../../assets/search-bar-svg.svg") no-repeat;
+}
