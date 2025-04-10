@@ -52,14 +52,22 @@ const Home = () => {
   return (
     <>
       {" "}
-      <section className="home">
+      <div className='logo'>
+        <img src='../img/Logo.svg' />
+        <h6>Tasty</h6>
+      </div>
+      <section className='home'>
         <SearchBarHome />
         {meals ? (
           <div className={`suggestions ${searchItem.length > 0 ? "show" : ""}`}>
             {meals.meals.map((item, index) => (
-              <Link to={`/details/${item.idMeal}`} key={index}>
-                {item.strMeal}
-              </Link>
+              <div className='suggestion-items'>
+                <Link
+                  to={`/details/${item.idMeal}`}
+                  key={index}>
+                  {item.strMeal}
+                </Link>
+              </div>
             ))}
           </div>
         ) : (
@@ -67,30 +75,36 @@ const Home = () => {
         )}
         <h3>Meal of the Day</h3>
         {randomMeal ? (
-          <Link to={`/details/${randomMeal.meals[0].idMeal}`}>
-            <div className="random-meal">
-              <h4>{randomMeal.meals[0].strMeal}</h4>
-              <div className="random-info">
-                <p>{randomMeal.meals[0].strCategory}</p>
-                <p>{randomMeal.meals[0].strArea}</p>
+          <div className='random-meal-container'>
+            <Link to={`/details/${randomMeal.meals[0].idMeal}`}>
+              <div className='random-meal'>
+                <h4>{randomMeal.meals[0].strMeal}</h4>
+                <div className='random-info'>
+                  <p>{randomMeal.meals[0].strCategory}</p>
+                  <p>{randomMeal.meals[0].strArea}</p>
+                </div>
               </div>
-            </div>
-          </Link>
+            </Link>
+          </div>
         ) : (
           <p>Loading...</p>
         )}
 
         <AreaList data={areas} />
-        <div className="see">
+        <div className='see'>
           <h3>Categories</h3>
-          <Link className="see-all" to="/categories/beef">
+          <Link
+            className='see-all'
+            to='/categories/beef'>
             See all
           </Link>
         </div>
-        <div className="categories-home">
+        <div className='categories-home'>
           {categories ? (
             categories.categories.map((item, index) => (
-              <div className="single-category" key={index}>
+              <div
+                className='single-category'
+                key={index}>
                 <Link to={`/categories/${item.strCategory}`}>
                   <img src={item.strCategoryThumb} />
                   {item.strCategory}
