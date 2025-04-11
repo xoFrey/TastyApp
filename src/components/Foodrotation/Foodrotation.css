@@ -5,7 +5,7 @@
   height: 70vh;
 }
 .circle {
-  background: url(../../../public/img/particles.svg) no-repeat center;
+  background: url(../img/particles.svg) no-repeat center;
   background-size: contain;
   background-color: hsla(0, 0%, 85%, 0.214);
   border-radius: 50%;
