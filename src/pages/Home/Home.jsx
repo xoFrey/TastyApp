@@ -51,7 +51,6 @@ const Home = () => {
 
   return (
     <>
-      {" "}
       <div className='logo'>
         <img src='../img/Logo.svg' />
         <h6>Tasty</h6>
