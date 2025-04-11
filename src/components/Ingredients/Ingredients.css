@@ -1,28 +1,17 @@
-/* .cont {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
 .ingredients {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
   gap: 2vw;
-  margin-bottom: 20vw;
+  margin-bottom: 10rem;
 }
-/* .cont {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 2vw;
-} */
 
 .cont p {
-  box-shadow: 2px 2px 2px 2px black;
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.1);
   padding: 2vw 12vw;
   border-radius: 10px;
-  margin-bottom: 1vw;
+  margin-bottom: 2vw;
 }
 
 h3 {

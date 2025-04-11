@@ -20,8 +20,8 @@ const Ingredients = (props) => {
     <article className={` ${props.toggolino ? "" : "toggleklasse"}  `}>
       <h3>Ingredients</h3>
 
-      <section className="ingredients">
-        <div className="cont">
+      <section className='ingredients'>
+        <div className='cont'>
           {array.map((item, index) => (
             <div key={index}>
               <div>
@@ -30,31 +30,6 @@ const Ingredients = (props) => {
             </div>
           ))}
         </div>
-
-        {/*  <div className="cont-left">
-          {props.data ? (
-            props.data.map((item, index) => (
-              <div key={index}>
-                <ul>
-                  <li> {item} </li>
-                </ul>
-              </div>
-            ))
-          ) : (
-            <p>Load...</p>
-          )}
-        </div>
-        <div className="cont-right">
-          {props.newData ? (
-            props.newData.map((newItem, index) => (
-              <div key={index}>
-                <p>{newItem}</p>
-              </div>
-            ))
-          ) : (
-            <p>Load...</p>
-          )}
-        </div> */}
       </section>
     </article>
   );

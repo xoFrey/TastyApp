@@ -43,18 +43,22 @@ const Areas = () => {
       .catch((err) => console.log("Area List", err));
   }, []);
 
-  areaData ? areaData.meals.map((item) => mealNames.push(item.strMeal)) : console.log("No data found");
+  areaData
+    ? areaData.meals.map((item) => mealNames.push(item.strMeal))
+    : console.log("No data found");
 
   console.log(areaData);
 
   return (
-    <section className="areas">
-      <div className="comp-div">
+    <section className='areas'>
+      <div className='comp-div'>
         <SearchBar />
-        <div className="select-options">
+        <div className='select-options'>
           {areas ? (
             areas.meals.map((item, index) => (
-              <NavLink to={`/areas/${item.strArea}`} key={index}>
+              <NavLink
+                to={`/areas/${item.strArea}`}
+                key={index}>
                 {item.strArea}
               </NavLink>
             ))
@@ -62,27 +66,39 @@ const Areas = () => {
             <p>Loading</p>
           )}
         </div>
-        <div className="meals-div">
+        <div className='meals-div'>
           {searchItem.length > 0 ? (
             meals.meals.map((item) =>
               mealNames.map((name) =>
                 item.strMeal.includes(name) ? (
                   <Link to={`/details/${item.idMeal}`}>
-                    <div key={item.idMeal} className="meal">
-                      <img src={item.strMealThumb} alt={item.strMeal} className="thumb-meal" />
+                    <div
+                      key={item.idMeal}
+                      className='meal'>
+                      <img
+                        src={item.strMealThumb}
+                        alt={item.strMeal}
+                        className='thumb-meal'
+                      />
                       <p>{item.strMeal}</p>
                     </div>
                   </Link>
                 ) : (
-                  console.log("nein")
-                )
-              )
+                  <p>Loading...</p>
+                ),
+              ),
             )
           ) : areaData ? (
             areaData.meals.map((singleAllData) => (
               <Link to={`/details/${singleAllData.idMeal}`}>
-                <div key={singleAllData.idMeal} className="meal">
-                  <img src={singleAllData.strMealThumb} alt={singleAllData.strMeal} className="thumb-meal" />
+                <div
+                  key={singleAllData.idMeal}
+                  className='meal'>
+                  <img
+                    src={singleAllData.strMealThumb}
+                    alt={singleAllData.strMeal}
+                    className='thumb-meal'
+                  />
                   <p>{singleAllData.strMeal}</p>
                 </div>
               </Link>
