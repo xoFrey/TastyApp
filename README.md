@@ -71,4 +71,17 @@
 
 <h2><samp>Screenshot</samp></h2>
 
-<p>Coming soon...</p>
+<p align="center">
+<img width=300 src="./src/assets/img/loading.png"/> <img width=300 src="./src/assets/img/starting.png"/>
+</p>
+<p align="center">
+<img width=300 src="./src/assets/img/home.png"/> <img width=300 src="./src/assets/img/searchbar.png"/>
+</p>
+<p align="center">
+<img width=300 src="./src/assets/img/search.png"/> <img width=300 src="./src/assets/img/filter.png"/>
+</p>
+<p align="center">
+<img width=300 src="./src/assets/img/ingredients.png"/> <img width=300 src="./src/assets/img/instructions.png"/>
+</p>
+
+
